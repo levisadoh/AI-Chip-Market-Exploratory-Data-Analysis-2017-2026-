@@ -27,7 +27,7 @@ Key Findings
 
 Market growth. Total estimated market revenue grew from roughly $600M in 2020 to a peak of $112.5B in 2025, before easing to $70.7B in 2026. The sharpest inflection was 2023→2024 — revenue jumped from $23.6B to $109.8B, a ~4.6x increase in a single year, driven almost entirely by the NVIDIA H100 ramp.
 
-Vendor concentration. NVIDIA accounts for roughly $254.1B in cumulative revenue across the dataset — more than 10x its closest competitor, Google (~$23.4B). AMD (~$19.2B), Huawei (~$11.7B), and AWS (~$8.0B) form a distant second tier; Apple, Cambricon, Tenstorrent, and SambaNova each contribute under $1B combined.
+Vendor concentration. NVIDIA accounts for roughly $254.1B in cumulative revenue across the dataset — more than 10x its closest competitor, Google ($23.4B). AMD ($19.2B), Huawei ($11.7B), and AWS ($8.0B) form a distant second tier; Apple, Cambricon, Tenstorrent, and SambaNova each contribute under $1B combined.
 
 Shipment leadership. The NVIDIA H100 alone shipped over 6.05M units across its lifetime — more than 60% of total shipments in the tracked subset. Total market shipments rose from 38,182 units in 2020 to a peak of ~3.43M in 2025.
 
