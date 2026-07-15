@@ -1,5 +1,5 @@
 # AI-Chip-Market-Exploratory-Data-Analysis-2017-2026-
-An Excel-first exploratory data analysis of the AI accelerator market, covering 30 chips from 11 vendors across a decade of shipments, pricing, and compute specifications. Built entirely in Excel using live formulas — no static, hardcoded outputs.
+An Excel-first exploratory data analysis of the AI accelerator market, covering 30 chips from 11 vendors across a decade of shipments, pricing, and compute specifications. Built entirely in Excel using live formulas no static, hardcoded outputs.
 
 Overview
 
