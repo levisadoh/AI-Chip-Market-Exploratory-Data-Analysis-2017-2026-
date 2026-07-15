@@ -36,7 +36,6 @@ Distribution correction. Shipments, ASP, and revenue are all heavily right-skewe
 Correlation findings. TDP and ASP correlate at 0.995 — near-perfect, but likely an artifact of a few extreme high-power, high-price chips rather than a genuine market-wide relationship, since both columns are heavily skewed. Shipments and revenue correlate at 0.974, which is largely definitional (revenue = shipments × price). More notably, raw compute performance (FP16 TFLOPS) is a weak predictor of price (r = 0.11), and memory capacity shows weak correlation (<0.22) with every other variable tested.
 
 Efficiency gains. Compute efficiency (TFLOPS/watt) varies from under 1 on older, high-power chips to over 2 on newer, leaner designs — consistent with real generational efficiency improvements industry-wide.
-
 Honest Limitations
 
 
