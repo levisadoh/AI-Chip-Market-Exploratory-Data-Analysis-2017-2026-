@@ -21,8 +21,17 @@ Surface honest, data-backed observations — including where the data falls shor
 
 
 Workbook Structure
+Sheet	    Purpose
+ai_chip_market-	Source dataset with engineered columns: years_since_launch, log-transforms, skewness diagnostics, and a compute-efficiency metric (TFLOPS/watt)
+skewness-	Paired histograms (raw vs. log-transformed) for shipments, ASP, and revenue
+shipment -revenue	Pivot table: shipment volume by chip × year
+Time-Based Trends-	Year-over-year revenue growth and vendor-level revenue breakdown
+Total shipment by- chip	Chips ranked by lifetime shipment volume alongside launch date
+Compute efficiency-	FP16 TFLOPS vs. average TDP (watts) across chips
+correlation matrix-	Pearson correlations across memory, compute, power, price, shipments, and revenue
+lifecycle-	Pivot view of shipments by chip across years-since-launch
 
-SheetPurposeai_chip_marketSource dataset with engineered columns: years_since_launch, log-transforms, skewness diagnostics, and a compute-efficiency metric (TFLOPS/watt)skewnessPaired histograms (raw vs. log-transformed) for shipments, ASP, and revenueshipment revenuePivot table: shipment volume by chip × yearTime-Based TrendsYear-over-year revenue growth and vendor-level revenue breakdownTotal shipment by chipChips ranked by lifetime shipment volume alongside launch dateCompute efficiencyFP16 TFLOPS vs. average TDP (watts) across chipscorrelation matrixPearson correlations across memory, compute, power, price, shipments, and revenuelifecyclePivot view of shipments by chip across years-since-launch
+
 
 Key Findings
 
