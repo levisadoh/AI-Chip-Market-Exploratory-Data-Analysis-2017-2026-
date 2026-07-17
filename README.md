@@ -48,9 +48,10 @@ NVIDIA accounts for roughly $254B in cumulative revenue across the dataset — m
 
 ### Shipment leadership
 
-The NVIDIA H100 alone shipped over 6 million units across its lifetime  more than any other chip in the dataset by a wide margin. Google's TPU v5e and the NVIDIA H200 round out the next tier, with AMD's MI300X the strongest non-NVIDIA GPU by volume.
+Chips are ranked by lifetime shipment volume alongside their launch date. NVIDIA H200 leads with 1.18M units despite launching relatively recently (April 2024), while NVIDIA A100, launched back in May 2020, has still moved 547K units over its much longer life. Apple's M5 (NPU), launched October 2025, has only 856 units so far too early to assess.
 
-<img width="752" height="452" alt="image" src="https://github.com/user-attachments/assets/80d497ad-ceab-4ed1-8824-1add852e4834" />
+<img width="1068" height="575" alt="image" src="https://github.com/user-attachments/assets/fad373eb-197a-4a1b-8b31-0861f800edfd" />
+
 
 ### Distribution correction
 
