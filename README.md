@@ -43,7 +43,7 @@ Show Image
 
 Vendor concentration
 
-NVIDIA accounts for roughly $254B in cumulative revenue across the dataset — more than 10x its closest competitor, Google (~$23.4B). AMD (~$19.2B), Huawei (~$11.7B), and AWS (~$8.0B) form a distant second tier; Apple, Cambricon, Tenstorrent, and SambaNova each contribute under $1B.
+NVIDIA accounts for roughly $254B in cumulative revenue across the dataset — more than 10x its closest competitor, Google ($23.4B). AMD (~$19.2B), Huawei ($11.7B), and AWS ($8.0B) form a distant second tier; Apple, Cambricon, Tenstorrent, and SambaNova each contribute under $1B.
 
 Show Image
 
