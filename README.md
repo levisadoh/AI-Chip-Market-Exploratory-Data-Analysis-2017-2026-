@@ -34,7 +34,7 @@ lifecycle-	Pivot view of shipments by chip across years-since-launch
 
 
 Key Findings
-
+ 
 Market growth
 
 Total estimated market revenue grew from roughly $0.6B in 2020 to a peak of $112.5B in 2025, before easing to $70.7B in 2026. The sharpest inflection was 2023→2024 — revenue jumped from $23.6B to $109.8B, a ~4.6x increase in a single year, driven almost entirely by the NVIDIA H100 ramp.
