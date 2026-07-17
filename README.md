@@ -1,6 +1,6 @@
 # AI Chip Market: Exploratory Data Analysis (2017–2026)
 
-An Excel-first exploratory data analysis of the AI accelerator market, covering 30 chips from 11 vendors across a decade of shipments, pricing, and compute specifications. Built entirely in Excel using live formulas — no static, hardcoded outputs.
+An Excel-first exploratory data analysis of the AI accelerator market, covering 30 chips from 11 vendors across a decade of shipments, pricing, and compute specifications. Built entirely in Excel using live formulas  no static, hardcoded outputs.
 
 ## Overview
 
@@ -37,37 +37,39 @@ The workbook is structured as a full analytical pipeline: raw data → feature e
 
 Total estimated market revenue grew from roughly $0.6B in 2020 to a peak of $112.5B in 2025, before easing to $70.7B in 2026. The sharpest inflection was 2023→2024 — revenue jumped from $23.6B to $109.8B, a ~4.6x increase in a single year, driven almost entirely by the NVIDIA H100 ramp.
 
-![Revenue by Year](assets/revenue_by_year.png)
+<img width="1282" height="688" alt="image" src="https://github.com/user-attachments/assets/87369271-d67f-4d74-8430-81eef297cbbd" />
+
 
 ### Vendor concentration
 
 NVIDIA accounts for roughly $254B in cumulative revenue across the dataset — more than 10x its closest competitor, Google (~$23.4B). AMD (~$19.2B), Huawei (~$11.7B), and AWS (~$8.0B) form a distant second tier; Apple, Cambricon, Tenstorrent, and SambaNova each contribute under $1B.
 
-![Vendor Revenue Share](assets/vendor_revenue_share.png)
+<img width="1190" height="696" alt="image" src="https://github.com/user-attachments/assets/360fcc27-aa72-4458-8aba-12bf842e7b87" />
 
 ### Shipment leadership
 
 The NVIDIA H100 alone shipped over 6 million units across its lifetime — more than any other chip in the dataset by a wide margin. Google's TPU v5e and the NVIDIA H200 round out the next tier, with AMD's MI300X the strongest non-NVIDIA GPU by volume.
 
-![Top Chips by Shipments](assets/top_chips_shipments.png)
+<img width="752" height="452" alt="image" src="https://github.com/user-attachments/assets/80d497ad-ceab-4ed1-8824-1add852e4834" />
 
 ### Distribution correction
 
 Shipments, ASP, and revenue are all heavily right-skewed in raw form — a small number of high-volume chips pull the distribution far to the right. A log transform normalized shipments effectively (skew: 5.12 → -0.34) and revenue (5.81 → 0.29). ASP improved but did not fully normalize (6.08 → -2.86, still left-skewed), likely due to a cluster of chips priced near $15,000 alongside a few extreme outliers (wafer-scale systems priced over $2M).
 
-![Skewness Fix](assets/skewness_fix.png)
+<img width="749" height="454" alt="image" src="https://github.com/user-attachments/assets/58e1eb3c-838b-4a5a-aedf-2af5241dd53f" />
+
 
 ### Correlation findings
 
 TDP and ASP correlate at 0.995 — near-perfect, but likely an artifact of a few extreme high-power, high-price chips rather than a genuine market-wide relationship, since both columns are heavily skewed. Shipments and revenue correlate at 0.974, which is largely definitional (revenue = shipments × price). More notably, raw compute performance (FP16 TFLOPS) is a weak predictor of price (r = 0.11), and memory capacity shows weak correlation (<0.22) with every other variable tested.
 
-![Correlation Matrix](assets/correlation_matrix.png)
 
 ### Efficiency gains
 
 Compute efficiency (TFLOPS/watt) varies from under 1 on older, high-power chips to over 2 on newer, leaner designs — consistent with real generational efficiency improvements industry-wide. The scatter below plots raw compute against power draw, colored by efficiency.
 
-![Compute Efficiency](assets/compute_efficiency.png)
+<img width="865" height="522" alt="image" src="https://github.com/user-attachments/assets/c20389b5-a3c7-44fb-9d6e-557f85984acf" />
+
 
 ## Honest Limitations
 
