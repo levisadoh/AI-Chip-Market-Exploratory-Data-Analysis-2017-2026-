@@ -35,7 +35,7 @@ The workbook is structured as a full analytical pipeline: raw data → feature e
 
 ### Market growth
 
-Total estimated market revenue grew from roughly $0.6B in 2020 to a peak of $112.5B in 2025, before easing to $70.7B in 2026. The sharpest inflection was 2023→2024 — revenue jumped from $23.6B to $109.8B, a ~4.6x increase in a single year, driven almost entirely by the NVIDIA H100 ramp.
+Total estimated market revenue grew from roughly $0.6B in 2020 to a peak of $112.5B in 2025, before easing to $70.7B in 2026. The sharpest inflection was 2023→2024  revenue jumped from $23.6B to $109.8B, a ~4.6x increase in a single year, driven almost entirely by the NVIDIA H100 ramp.
 
 <img width="1282" height="688" alt="image" src="https://github.com/user-attachments/assets/87369271-d67f-4d74-8430-81eef297cbbd" />
 
@@ -48,35 +48,35 @@ NVIDIA accounts for roughly $254B in cumulative revenue across the dataset — m
 
 ### Shipment leadership
 
-The NVIDIA H100 alone shipped over 6 million units across its lifetime — more than any other chip in the dataset by a wide margin. Google's TPU v5e and the NVIDIA H200 round out the next tier, with AMD's MI300X the strongest non-NVIDIA GPU by volume.
+The NVIDIA H100 alone shipped over 6 million units across its lifetime  more than any other chip in the dataset by a wide margin. Google's TPU v5e and the NVIDIA H200 round out the next tier, with AMD's MI300X the strongest non-NVIDIA GPU by volume.
 
 <img width="752" height="452" alt="image" src="https://github.com/user-attachments/assets/80d497ad-ceab-4ed1-8824-1add852e4834" />
 
 ### Distribution correction
 
-Shipments, ASP, and revenue are all heavily right-skewed in raw form — a small number of high-volume chips pull the distribution far to the right. A log transform normalized shipments effectively (skew: 5.12 → -0.34) and revenue (5.81 → 0.29). ASP improved but did not fully normalize (6.08 → -2.86, still left-skewed), likely due to a cluster of chips priced near $15,000 alongside a few extreme outliers (wafer-scale systems priced over $2M).
+Shipments, ASP, and revenue are all heavily right-skewed in raw form  a small number of high-volume chips pull the distribution far to the right. A log transform normalized shipments effectively (skew: 5.12 → -0.34) and revenue (5.81 → 0.29). ASP improved but did not fully normalize (6.08 → -2.86, still left-skewed), likely due to a cluster of chips priced near $15,000 alongside a few extreme outliers (wafer-scale systems priced over $2M).
 
 <img width="749" height="454" alt="image" src="https://github.com/user-attachments/assets/58e1eb3c-838b-4a5a-aedf-2af5241dd53f" />
 
 
 ### Correlation findings
 
-TDP and ASP correlate at 0.995 — near-perfect, but likely an artifact of a few extreme high-power, high-price chips rather than a genuine market-wide relationship, since both columns are heavily skewed. Shipments and revenue correlate at 0.974, which is largely definitional (revenue = shipments × price). More notably, raw compute performance (FP16 TFLOPS) is a weak predictor of price (r = 0.11), and memory capacity shows weak correlation (<0.22) with every other variable tested.
+TDP and ASP correlate at 0.995  near-perfect, but likely an artifact of a few extreme high-power, high-price chips rather than a genuine market-wide relationship, since both columns are heavily skewed. Shipments and revenue correlate at 0.974, which is largely definitional (revenue = shipments × price). More notably, raw compute performance (FP16 TFLOPS) is a weak predictor of price (r = 0.11), and memory capacity shows weak correlation (<0.22) with every other variable tested.
 
 
 ### Efficiency gains
 
-Compute efficiency (TFLOPS/watt) varies from under 1 on older, high-power chips to over 2 on newer, leaner designs — consistent with real generational efficiency improvements industry-wide. The scatter below plots raw compute against power draw, colored by efficiency.
+Compute efficiency (TFLOPS/watt) varies from under 1 on older, high-power chips to over 2 on newer, leaner designs  consistent with real generational efficiency improvements industry-wide. The scatter below plots raw compute against power draw, colored by efficiency.
 
 <img width="865" height="522" alt="image" src="https://github.com/user-attachments/assets/c20389b5-a3c7-44fb-9d6e-557f85984acf" />
 
 
 ## Honest Limitations
 
-- **2026 is a partial year.** The revenue and shipment dip in 2026 may reflect genuine market cooling or simply an incomplete data year — the workbook does not resolve which.
+- **2026 is a partial year.** The revenue and shipment dip in 2026 may reflect genuine market cooling or simply an incomplete data year  the workbook does not resolve which.
 - **ASP skew was not fully corrected** by a single log transform (see above); a Box-Cox or two-step transform would likely perform better if pursued further.
-- **The `shipment revenue` pivot reflects a filtered subset** (~15 chips, ~10.0M units) rather than the full 30-chip, ~14.1M-unit dataset — noted directly in the sheet so the discrepancy isn't mistaken for an error.
-- **The TDP–ASP correlation (0.995) should not be read causally** — it's most plausibly driven by a small number of extreme-value chips rather than a structural market relationship.
+- **The `shipment revenue` pivot reflects a filtered subset** (~15 chips, ~10.0M units) rather than the full 30-chip, ~14.1M-unit dataset  noted directly in the sheet so the discrepancy isn't mistaken for an error.
+- **The TDP–ASP correlation (0.995) should not be read causally**  it's most plausibly driven by a small number of extreme-value chips rather than a structural market relationship.
 - Shipment and revenue figures are **estimates**, not vendor-reported actuals; treat absolute values as directional rather than precise.
 
 ## Tools
